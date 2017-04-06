@@ -29,3 +29,5 @@ while I pondered
 weak and weary
 101011001010
 
+111100100000
+
