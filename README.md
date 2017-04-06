@@ -27,6 +27,8 @@ once upon a
 midnight dreary
 while I pondered
 weak and weary
+space, the final frontier
+These are the voyages of the 
 101011001010
 
 111100100000
