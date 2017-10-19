@@ -1,3 +1,4 @@
+Just adding a line at the top so no merge conflict happens.
 Its a brand new start.
 The sun is shining.
 Testing gpg.
