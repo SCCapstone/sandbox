@@ -10,4 +10,6 @@ This is the update you asked for.
 
 The robot's name is Robby.
 
-Causing a merge comflict.
+Causing a merge conflict.
+Editing this line on website.
+To resolve it, I keep both lines.
