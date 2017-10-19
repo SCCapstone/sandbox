@@ -9,7 +9,7 @@ bobby sucks
 
 This is the update you asked for.
 
-The robot's name is Robby.
+The robot's name is Robby. On github.
 
 Change on my feature branch.
 
