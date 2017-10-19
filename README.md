@@ -13,3 +13,4 @@ The robot's name is Robby.
 Causing a merge conflict.
 Editing this line on website.
 To resolve it, I keep both lines.
+Adding a line at the bottom so no merge conflict.
