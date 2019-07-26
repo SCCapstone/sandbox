@@ -22,5 +22,9 @@ Adding a line at the bottom so no merge conflict.
 New change on master
 Added on orphan branch.
 and this
+<<<<<<< Updated upstream
 
 Editing on github.
+=======
+q
+>>>>>>> Stashed changes
