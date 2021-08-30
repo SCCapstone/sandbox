@@ -31,3 +31,7 @@ See [Section 2](#Section-2)
 
 - updated
 
+# section 3
+
+made this change in vs code in the browser
+
