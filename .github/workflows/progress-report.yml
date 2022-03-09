@@ -1,0 +1,37 @@
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+name: Weekly Progress Report
+on:
+  schedule:
+    - cron: 20 07 * * 1
+
+jobs:
+  create_issue:
+    name: Create weekly progress report
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Create weekly progress report
+        uses: imjohnbo/issue-bot@3daae12aa54d38685d7ff8459fc8a2aee8cea98b
+        with:
+          assignees: "josemvidal, jmvidal-robot"
+          labels: "readme"
+          title: "Progress Report"
+          body: |
+            ### Agenda
+
+            - [ ] Start the recording
+            - [ ] Check-ins
+            - [ ] Discussion points
+            - [ ] Post the recording
+                    
+            ### Discussion Points
+            Add things to discuss below
+          pinned: false
+          close-previous: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
