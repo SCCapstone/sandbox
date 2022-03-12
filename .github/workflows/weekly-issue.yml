@@ -17,7 +17,7 @@ jobs:
         uses: actions-ecosystem/action-create-issue@v1
         with:
           github_token: ${{ secrets.github_token }}
-          title: ${{ steps.date.outputs.today }}
+          title: Weekly Issue ${{ steps.date.outputs.today }}
           body: |
             ## This week's TODO
 
