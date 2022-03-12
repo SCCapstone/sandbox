@@ -18,7 +18,7 @@ jobs:
       - name: Get due date, next Sunday
         id: duedate
         run: |
-          echo "::set-output name=duedate::$(date --date='next Sunday' "+%Y-%m-%d")"
+          echo "::set-output name=duedate::$(date --date="next Sunday" "+%Y-%m-%d")"
       - name: Create weekly progress report
         uses: imjohnbo/issue-bot@3daae12aa54d38685d7ff8459fc8a2aee8cea98b
         with:
