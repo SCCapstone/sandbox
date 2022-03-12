@@ -22,9 +22,9 @@ jobs:
       - name: Create weekly progress report
         uses: imjohnbo/issue-bot@3daae12aa54d38685d7ff8459fc8a2aee8cea98b
         with:
-          assignees: "josemvidal, jmvidal-robot"
-          labels: "readme"
-          title: "Progress Report ${{ steps.date.outputs.duedate }}"
+          assignees: ""
+          labels: "question"
+          title: "Progress report ${{ steps.date.outputs.duedate }}"
           body: |
             ### Agenda
 
