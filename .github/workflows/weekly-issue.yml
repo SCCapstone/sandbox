@@ -19,10 +19,7 @@ jobs:
           github_token: ${{ secrets.github_token }}
           title: Progress report ${{ steps.date.outputs.today }}
           body: |
-            ## This week's TODO
-
-            - [ ] Have a meeting with UX team
-            - [ ] Check the dashboard
+            What did you do this week? 
 
           labels: |
             question
