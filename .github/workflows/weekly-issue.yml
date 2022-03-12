@@ -1,4 +1,4 @@
-name: Create an issue on Monday
+name: Create weekly progress report Issue
 
 on:
   schedule:
