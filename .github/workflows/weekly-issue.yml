@@ -2,7 +2,7 @@ name: Create weekly progress report Issue
 
 on:
   schedule:
-    - cron: '5 * * * *' # At 09:00 on Monday
+    - cron: '17 * * * *'
 
 jobs:
   create_issue:
