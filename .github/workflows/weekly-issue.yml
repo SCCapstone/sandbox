@@ -2,22 +2,22 @@ name: Create weekly progress report Issue
 
 on:
   schedule:
-    - cron: '17 * * * *'
+    - cron: '40 5 * * 1' #5:40 am UTC is 0:40 EST, Mondays
 
 jobs:
   create_issue:
     runs-on: ubuntu-latest
     steps:
-      - name: Get today's date
+      - name: Get next Sunday's date
         id: date
         run: |
-          echo "::set-output name=today::$(date --date="next Sunday" "+%Y-%m-%d")"
+          echo "::set-output name=nextday::$(date --date="next Sunday" "+%Y-%m-%d")"
 
       - name: Create an issue
         uses: actions-ecosystem/action-create-issue@v1
         with:
           github_token: ${{ secrets.github_token }}
-          title: Progress report ${{ steps.date.outputs.today }}
+          title: Progress report ${{ steps.date.outputs.nextday }}
           body: |
             What did you do this week? 
 
