@@ -1,8 +1,10 @@
 name: Create weekly progress report Issue
-
+# Create a Issue titled "Progress report 2022-12-01" where the date is 
+# always next Sunday (from when the the script is run)
+# Runs on Mondays early AM.
 on:
   schedule:
-    - cron: '40 5 * * 1' #5:40 am UTC is 0:40 EST, Mondays
+    - cron: '40 5 * * 1' # 5:40 am UTC is 0:40 EST, Mondays
 
 jobs:
   create_issue:
