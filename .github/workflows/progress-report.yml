@@ -6,7 +6,7 @@
 name: Weekly Progress Report
 on:
   schedule:
-    - cron: 20 07 * * 1
+    - cron: 5 * * * *
 
 jobs:
   create_issue:
@@ -15,12 +15,16 @@ jobs:
     permissions:
       issues: write
     steps:
+      - name: Get due date, next Sunday
+        id: duedate
+        run: |
+          echo "::set-output name=duedate::$(date --date='next Sunday' "+%Y-%m-%d")"
       - name: Create weekly progress report
         uses: imjohnbo/issue-bot@3daae12aa54d38685d7ff8459fc8a2aee8cea98b
         with:
           assignees: "josemvidal, jmvidal-robot"
           labels: "readme"
-          title: "Progress Report"
+          title: "Progress Report ${{ steps.date.outputs.duedate }}"
           body: |
             ### Agenda
 
