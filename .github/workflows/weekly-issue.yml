@@ -19,7 +19,7 @@ jobs:
         uses: actions-ecosystem/action-create-issue@v1
         with:
           github_token: ${{ secrets.github_token }}
-          title: Progress report ${{ steps.date.outputs.nextday }}
+          title: Weekly report ${{ steps.date.outputs.nextday }}
           body: |
             What did you do this week? 
 
