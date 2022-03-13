@@ -4,7 +4,7 @@ name: Create weekly progress report Issue
 # Runs on Mondays early AM.
 on:
   schedule:
-    - cron: '17 * * * *' # 40 5 * * 1 is 5:40 am UTC is 0:40 EST, Mondays
+    - cron: '40 5 * * 1' # 40 5 * * 1 is 5:40 am UTC is 0:40 EST, Mondays
 
 jobs:
   create_issue:
