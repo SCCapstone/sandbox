@@ -1,0 +1,30 @@
+name: Create weekly progress report Issue
+# Create a Issue titled "Progress report 2022-12-01" where the date is 
+# always next Sunday (from when the the script is run)
+# Runs on Mondays early AM.
+on:
+  schedule:
+    - cron: '40 5 * * 1' # 40 5 * * 1 is 5:40 am UTC is 0:40 EST, Mondays
+
+jobs:
+  create_issue:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get next Sunday's date
+        id: date
+        run: |
+          echo "::set-output name=nextday::$(date --date="next Sunday" "+%Y-%m-%d")"
+
+      - name: Create an issue
+        uses: actions-ecosystem/action-create-issue@v1
+        with:
+          github_token: ${{ secrets.github_token }}
+          title: Weekly report ${{ steps.date.outputs.nextday }}
+          body: |
+            What did you do this week? 
+
+          labels: |
+            question
+          assignees: |
+            josemvidal
+            jmvidal-robot
