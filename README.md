@@ -1,7 +1,10 @@
-asfasdf
+adsfasf
 
-Work on the first thing.
+TODO: #265 Get rid of all this junk in the Readme
 
-first thing work here....
+# I got rid of it
 
-Fix it again.
+
+Nothing here.
+
+One more thing.
