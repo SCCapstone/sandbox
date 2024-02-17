@@ -43,7 +43,3 @@ HIHIHIHII
 
 
 SECOND
-
-
-asdfasdf
-asdfasd
