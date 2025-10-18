@@ -31,21 +31,4 @@ qqqqqqqqq
 
 3333333
 
-
-
-11111111
-
-
-2222222
-
-
-
-33333333
-
-
-
-
-HIHIHIHII
-
-
-SECOND
+I deleted some stuff above.
